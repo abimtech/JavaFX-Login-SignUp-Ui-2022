@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: transparant;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login">
+   <children>
+      <AnchorPane onMouseDragged="#screenDragged" onMousePressed="#screenPressed" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+         <children>
+            <Pane fx:id="InformationPane" layoutX="500.0" prefHeight="700.0" prefWidth="500.0">
+               <children>
+                  <VBox fx:id="SignUpInformation" alignment="CENTER" fillWidth="false" prefHeight="700.0" prefWidth="500.0">
+                     <children>
+                        <Label text="Create Account">
+                           <font>
+                              <Font name="Montserrat ExtraBold" size="50.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="69.0" prefWidth="353.0" spacing="40.0">
+                           <children>
+                              <JFXButton prefHeight="60.0" prefWidth="60.0" styleClass="LinkenIn" text=" " textAlignment="CENTER">
+                                 <graphic>
+                                    <FontAwesomeIcon iconName="LINKEDIN" size="35" styleClass="icon" textAlignment="CENTER" wrappingWidth="26.0" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="85.0" layoutY="22.0" prefHeight="60.0" prefWidth="60.0" styleClass="google" text=" " textAlignment="CENTER">
+                                 <graphic>
+                                    <FontAwesomeIcon iconName="GOOGLE" size="35" styleClass="icon" wrappingWidth="22.0" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="284.0" layoutY="22.0" prefHeight="60.0" prefWidth="60.0" styleClass="facebook" text=" " textAlignment="CENTER">
+                                 <graphic>
+                                    <FontAwesomeIcon iconName="FACEBOOK" size="35" styleClass="icon" wrappingWidth="18.0" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="330.0" text="or use your email for registration" textAlignment="CENTER" textFill="#434343" wrapText="true">
+                           <font>
+                              <Font name="Montserrat Regular" size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField focusColor="#eb3b5a" labelFloat="true" prefHeight="31.0" prefWidth="301.0" promptText="Name">
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXTextField focusColor="#eb3b5a" labelFloat="true" prefHeight="31.0" prefWidth="301.0" promptText="Email">
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXPasswordField focusColor="#eb3b5a" labelFloat="true" prefHeight="30.0" prefWidth="300.0" promptText="Password">
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </JFXPasswordField>
+                        <JFXButton buttonType="RAISED" onAction="#SignUP" prefHeight="43.0" prefWidth="170.0" styleClass="Button2" text="SIGN UP">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets top="45.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="SignInInformation" alignment="CENTER" fillWidth="false" prefHeight="700.0" prefWidth="500.0" visible="false">
+                     <children>
+                        <Label text="Sign In">
+                           <font>
+                              <Font name="Montserrat ExtraBold" size="50.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="69.0" prefWidth="353.0" spacing="40.0">
+                           <children>
+                              <JFXButton prefHeight="60.0" prefWidth="60.0" styleClass="LinkenIn" text=" " textAlignment="CENTER">
+                                 <graphic>
+                                    <FontAwesomeIcon iconName="LINKEDIN" size="35" styleClass="icon" textAlignment="CENTER" wrappingWidth="26.0" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="85.0" layoutY="22.0" prefHeight="60.0" prefWidth="60.0" styleClass="google" text=" " textAlignment="CENTER">
+                                 <graphic>
+                                    <FontAwesomeIcon iconName="GOOGLE" size="35" styleClass="icon" wrappingWidth="22.0" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="284.0" layoutY="22.0" prefHeight="60.0" prefWidth="60.0" styleClass="facebook" text=" " textAlignment="CENTER">
+                                 <graphic>
+                                    <FontAwesomeIcon iconName="FACEBOOK" size="35" styleClass="icon" wrappingWidth="18.0" />
+                                 </graphic>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="330.0" text="or use your account" textAlignment="CENTER" textFill="#434343" wrapText="true">
+                           <font>
+                              <Font name="Montserrat Regular" size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField focusColor="#eb3b5a" labelFloat="true" prefHeight="30.0" prefWidth="300.0" promptText="Email">
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXPasswordField focusColor="#eb3b5a" labelFloat="true" prefHeight="30.0" prefWidth="300.0" promptText="Password">
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </JFXPasswordField>
+                        <Label text="Forgot your password?">
+                           <VBox.margin>
+                              <Insets top="45.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Montserrat Regular" size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXButton buttonType="RAISED" onAction="#SignUP" prefHeight="43.0" prefWidth="170.0" styleClass="Button2" text="SIGN IN">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets top="35.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane fx:id="ColorPane" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: linear-gradient(to right, #eb3b5a , #fc5c65); -fx-background-radius: 20 0 0 20;">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#363636" height="27.99" offsetX="8.0" radius="20.4925" width="55.98" />
+               </effect>
+            </Pane>
+            <VBox fx:id="SIGNIN" alignment="CENTER" prefHeight="700.0" prefWidth="500.0">
+               <children>
+                  <Label text="Welcome Back!" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="50.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="116.0" prefWidth="461.0" text="To keep connected with us please login with your personal info" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Montserrat Regular" size="22.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" onAction="#SignIn" prefHeight="43.0" prefWidth="170.0" styleClass="Button" text="SIGN IN">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <VBox fx:id="SIGNUP" alignment="CENTER" layoutX="500.0" prefHeight="700.0" prefWidth="500.0" visible="false">
+               <children>
+                  <Label text="Hello, Friend!" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="50.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="116.0" prefWidth="461.0" text="Enter your personal details and start journey with us" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Montserrat Regular" size="22.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" onAction="#SignUP" prefHeight="43.0" prefWidth="170.0" styleClass="Button" text="SIGN UP">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="914.0" prefHeight="43.0" prefWidth="86.0" spacing="5.0">
+         <children>
+            <JFXButton fx:id="minusBtn" alignment="CENTER" layoutX="10.0" layoutY="10.0" onAction="#minus" prefHeight="25.0" prefWidth="25.0" styleClass="topButton" text=" ">
+               <graphic>
+                  <FontAwesomeIcon iconName="MINUS" size="20" smooth="false" styleClass="icon" wrappingWidth="10.214285850524902" x="25.0" y="25.0" />
+               </graphic>
+               <font>
+                  <Font size="5.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="closeBtn" alignment="CENTER" onAction="#close" prefHeight="25.0" prefWidth="25.0" styleClass="topButton" text=" ">
+               <graphic>
+                  <FontAwesomeIcon iconName="TIMES" size="20" strokeLineCap="ROUND" styleClass="icon" textAlignment="CENTER" wrappingWidth="11.0" />
+               </graphic>
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

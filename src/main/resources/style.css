@@ -1,0 +1,82 @@
+.Button{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20px;
+    -fx-font-size: 18px;
+    -fx-text-fill: #eb3b5a;
+    -fx-cursor: hand;
+}
+
+.Button:hover{
+    -fx-text-fill:  #000000;
+}
+
+
+.Button2{
+    -fx-background-color:  linear-gradient(to right, #eb3b5a , #fc5c65);
+    -fx-background-radius: 20px;
+    -fx-font-size: 18px;
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+}
+
+
+.Button2:hover{
+    -fx-text-fill:  #000000;
+}
+
+
+.LinkenIn , .facebook , .google{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 50px;
+    -fx-border-color: #000000;
+    -fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-text-fill: #000000;
+    -fx-cursor: hand;
+}
+
+.LinkenIn:hover{
+    -fx-background-color: #00a0dc;
+    -fx-border-color: #ffffff;
+}
+
+
+
+
+.facebook:hover{
+    -fx-background-color: #4267B2;
+    -fx-border-color: #ffffff;
+}
+
+.google:hover{
+    -fx-background-color: #DB4437;
+     -fx-border-color: #ffffff;
+}
+
+
+.LinkenIn:hover .icon, .facebook:hover .icon, .google:hover .icon{
+    -fx-fill:  #ffffff;
+}
+
+
+
+.topButton{
+    -fx-cursor: hand;
+}
+
+.topButton .icon{
+        -fx-fill:  #eb3b5a;
+}
+
+
+.topButton2{
+    -fx-cursor: hand;
+}
+
+.topButton2 .icon{
+        -fx-fill:  #ffffff;
+}
+
+.topButton2:hover .icon,.topButton:hover .icon {
+    -fx-fill: #000000;
+}
