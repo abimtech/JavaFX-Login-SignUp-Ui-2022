@@ -14,7 +14,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: transparant;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login">
    <children>
       <AnchorPane onMouseDragged="#screenDragged" onMousePressed="#screenPressed" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
@@ -76,7 +75,7 @@
                               <Insets top="25.0" />
                            </VBox.margin>
                         </JFXPasswordField>
-                        <JFXButton buttonType="RAISED" onAction="#SignUP" prefHeight="43.0" prefWidth="170.0" styleClass="Button2" text="SIGN UP">
+                        <JFXButton buttonType="RAISED" prefHeight="43.0" prefWidth="170.0" styleClass="Button2" text="SIGN UP">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -139,7 +138,7 @@
                               <Insets top="25.0" />
                            </VBox.margin>
                         </JFXPasswordField>
-                        <Label text="Forgot your password?">
+                        <Label styleClass="labelForget" text="Forgot your password?">
                            <VBox.margin>
                               <Insets top="45.0" />
                            </VBox.margin>
@@ -147,7 +146,7 @@
                               <Font name="Montserrat Regular" size="15.0" />
                            </font>
                         </Label>
-                        <JFXButton buttonType="RAISED" onAction="#SignUP" prefHeight="43.0" prefWidth="170.0" styleClass="Button2" text="SIGN IN">
+                        <JFXButton buttonType="RAISED" prefHeight="43.0" prefWidth="170.0" styleClass="Button2" text="SIGN IN">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>

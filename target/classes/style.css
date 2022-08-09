@@ -80,3 +80,12 @@
 .topButton2:hover .icon,.topButton:hover .icon {
     -fx-fill: #000000;
 }
+
+.labelForget{
+  -fx-text-fill : #000000;
+      -fx-cursor: hand;
+}
+
+.labelForget:hover{
+  -fx-text-fill : #eb3b5a;
+}
